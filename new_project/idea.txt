@@ -1,4 +1,23 @@
 HANGMAN in PYTHON
 
-FIRST: Need menu for starting/quiting game.
-SECOND: Basic engine for inputting phrase or word and then allowing another player to guess letters.
+Menu system needs better implementation with game engine when engine is complete.
+Creating prompt for player and answer key should use similar functions like check_letters()
+    These functions should be separate but I need a way to replace prompt letters when guessed correctly.
+    One way we could do this is by creating a mirrored list and generate the prompt based on whether the user has the letters or not.
+    The mirrored list would display '_' when not guessed and the letter when guessed correctly.
+        This would require at least two or three lists.
+        For example:
+        prompt is 'Hello'
+        answer_key is ['h', 'e', 'l', 'o']
+        answer_prompt = ['h', 'e', 'l', 'l', 'o']
+        display_prompt = ['_', '_', '_', '_', '_']
+        guessed_letters = []
+        When the user guesses 'h', a function should check it against the answer_key.
+            This should in turn add 'h' to guessed_letters (['h'])
+        Whenever the game goes to print the prompt on the screen now,
+        'h' should appear wherever it is present in the prompt.
+        'h _ _ _ _'
+        for item in answer_key:
+            for letter in guessed_letters:
+                if item == letter:
+                    
