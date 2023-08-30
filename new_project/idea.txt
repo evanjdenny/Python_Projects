@@ -1,0 +1,4 @@
+HANGMAN in PYTHON
+
+FIRST: Need menu for starting/quiting game.
+SECOND: Basic engine for inputting phrase or word and then allowing another player to guess letters.
